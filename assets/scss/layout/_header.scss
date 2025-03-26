@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as vstyle;
+* {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    .header-list {
+        .list {
+            display: flex;
+            list-style: vstyle.$styleless;
+            gap: 4vh;
+            
+            .menu-item {
+                color: vstyle.$secondarycolor;
+            }
+
+            .menu-item-active {
+                color: vstyle.$primarycolor;
+            }
+
+            a {
+                text-decoration: vstyle.$styleless;
+            }
+            
+        }
+    }
+}
+
+.logo {
+    width: 20vh;
+    img {
+        width: 100%;
+    }
+}

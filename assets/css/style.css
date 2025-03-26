@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+header .header-list .list {
+  display: flex;
+  list-style: none;
+  gap: 4vh;
+}
+header .header-list .list .menu-item {
+  color: grey;
+}
+header .header-list .list .menu-item-active {
+  color: black;
+}
+header .header-list .list a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 20vh;
+}
+.logo img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+body {
+  background-image: url(../img/wave.svg);
+  background-size: cover;
+  margin: 0 auto;
+  font-family: "LatoRegular";
+}
+
+.container {
+  margin: 4vh auto;
+  width: 65%;
+  position: relative;
+}
+
+.container-card {
+  display: flex;
+  gap: 1vh;
+}
+.container-card h3 {
+  color: white;
+  text-transform: uppercase;
+}
+.container-card .services-card-horizontal {
+  display: flex;
+}
+.container-card .services-card-horizontal .card {
+  display: flex;
+  width: 70vh;
+  height: 51vh;
+}
+.container-card .services-card-horizontal .card-primary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/homme-assis-batiment.jpg);
+  background-size: cover;
+  background-position: 0;
+}
+.container-card .services-card-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.container-card .services-card-vertical .card {
+  display: flex;
+  width: 69vh;
+  height: 25vh;
+}
+.container-card .services-card-vertical .card-secondary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/passport.jpg);
+  background-size: cover;
+  background-position: 0;
+}
+.container-card .services-card-vertical .card-thirsty {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/montgolfiere.jpg);
+  background-size: cover;
+  background-position: 0;
+}
+
+.card {
+  box-shadow: 0 2px 2px grey;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.card p {
+  color: white;
+}
+.card p::after {
+  content: ">";
+  color: rgb(226, 108, 108);
+}
+
+body #banner .container .cadrerose {
+  display: flex;
+  background-color: rgb(226, 108, 108);
+  border-radius: 10px;
+  box-shadow: 0 2px 2px grey;
+}
+body #banner .container .cadrerose * {
+  margin: 4vh;
+}
+body #banner .container .cadrerose h1, body #banner .container .cadrerose p {
+  color: white;
+  width: 80%;
+}
+body #banner .container .banner-image {
+  width: 40%;
+  overflow: hidden;
+  padding: 0 10vh 0 0;
+  margin: 0;
+}
+body #banner .container .banner-image img {
+  width: 100%;
+  position: relative;
+  top: 20%;
+  margin: 0;
+}
+
+.btn {
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  text-decoration: none;
+  padding: 1vh;
+}
+
+/*# sourceMappingURL=style.css.map */
