@@ -5,6 +5,7 @@
 header {
     display: flex;
     justify-content: space-around;
+    width: 100%;
     .header-list {
         .list {
             display: flex;
@@ -24,6 +25,9 @@ header {
             }
             
         }
+    }
+    .menu {
+        display: none;
     }
 }
 

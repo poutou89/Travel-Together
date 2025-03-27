@@ -11,5 +11,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poutou89/Travel-Together.git"
+  },
+  "bugs": {
+    "url": "https://github.com/poutou89/Travel-Together/issues"
+  },
+  "homepage": "https://github.com/poutou89/Travel-Together#readme",
   "description": ""
 }

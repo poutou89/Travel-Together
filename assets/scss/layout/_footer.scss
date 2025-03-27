@@ -1,0 +1,63 @@
+@use "../abstracts/variables" as vstyle;
+
+footer {
+    background-color: rgb(32, 32, 32);
+    padding-top: 18vh;
+    width: 100%;
+
+    .end-nav {
+        display: flex;
+        justify-content: space-around;
+
+        .footer-list {
+            .list {
+                display: flex;
+                list-style: vstyle.$styleless;
+                gap: 4vh;
+
+                .menu-item {
+                    color: vstyle.$secondarycolor;
+                }
+
+                .menu-item-active {
+                    color: vstyle.$thristycolor;
+                }
+
+                a {
+                    text-decoration: vstyle.$styleless;
+                }
+
+            }
+        }
+    }
+
+    .container {
+        margin-bottom: 0;
+        border-top: 1px solid vstyle.$secondarycolor;
+        .end-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .list {
+                list-style: vstyle.$styleless;
+                gap: 4vh;
+                padding: 0;
+            }
+
+            li:first-child {
+                color: vstyle.$thristycolor;
+            }
+
+            li:not(:first-child) {
+                color: vstyle.$secondarycolor;
+            }
+
+            .rs {
+                display: flex;
+                list-style: vstyle.$styleless;
+                gap: 1vh;
+            }
+        }
+    }
+}

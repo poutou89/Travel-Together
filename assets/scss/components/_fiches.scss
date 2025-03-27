@@ -1,0 +1,19 @@
+#features {
+    .container {
+        h2 {
+            text-align: end;
+        }
+        .fiches {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            align-items: flex-end;
+            .fiches-item {
+                width: 23%;
+                svg {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}

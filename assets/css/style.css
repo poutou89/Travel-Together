@@ -5,6 +5,7 @@
 header {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 header .header-list .list {
   display: flex;
@@ -20,6 +21,9 @@ header .header-list .list .menu-item-active {
 header .header-list .list a {
   text-decoration: none;
 }
+header .menu {
+  display: none;
+}
 
 .logo {
   width: 20vh;
@@ -34,9 +38,15 @@ header .header-list .list a {
 }
 body {
   background-image: url(../img/wave.svg);
+  background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   font-family: "LatoRegular";
+}
+
+h2 {
+  margin-top: 10vh;
+  font-size: 36px;
 }
 
 .container {
@@ -45,9 +55,64 @@ body {
   position: relative;
 }
 
+.container .cadrerose {
+  display: flex;
+  background-color: rgb(226, 108, 108);
+  border-radius: 10px;
+  box-shadow: 0 2px 2px grey;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+.container .cadrerose * {
+  margin: 4vh;
+}
+.container .cadrerose h1,
+.container .cadrerose p {
+  color: white;
+  width: 80%;
+}
+.container .banner-image {
+  margin: 0 10% 0 0;
+  position: relative;
+  transform: translateY(8vh);
+}
+.container .banner-image img {
+  width: 100%;
+  margin: 0;
+}
+
+#end-banner .container .cadrerose {
+  align-items: center;
+  transform: translateY(20vh);
+  margin-top: -20vh;
+  justify-content: space-evenly;
+  position: relative;
+}
+#end-banner .container .cadrerose .container-text {
+  width: 50%;
+}
+#end-banner .container .cadrerose .container-button {
+  width: 50%;
+  position: relative;
+  top: 50%;
+}
+
+.btn {
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  text-decoration: none;
+  padding: 1vh;
+}
+
 .container-card {
   display: flex;
   gap: 1vh;
+  width: 100%;
 }
 .container-card h3 {
   color: white;
@@ -55,6 +120,7 @@ body {
 }
 .container-card .services-card-horizontal {
   display: flex;
+  width: 50%;
 }
 .container-card .services-card-horizontal .card {
   display: flex;
@@ -70,10 +136,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1vh;
+  width: 50%;
 }
 .container-card .services-card-vertical .card {
   display: flex;
-  width: 69vh;
   height: 25vh;
 }
 .container-card .services-card-vertical .card-secondary {
@@ -102,40 +168,78 @@ body {
   color: rgb(226, 108, 108);
 }
 
-body #banner .container .cadrerose {
+#features .container h2 {
+  text-align: end;
+}
+#features .container .fiches {
   display: flex;
-  background-color: rgb(226, 108, 108);
-  border-radius: 10px;
-  box-shadow: 0 2px 2px grey;
+  text-align: center;
+  justify-content: space-around;
+  align-items: flex-end;
 }
-body #banner .container .cadrerose * {
-  margin: 4vh;
+#features .container .fiches .fiches-item {
+  width: 23%;
 }
-body #banner .container .cadrerose h1, body #banner .container .cadrerose p {
-  color: white;
-  width: 80%;
-}
-body #banner .container .banner-image {
-  width: 40%;
-  overflow: hidden;
-  padding: 0 10vh 0 0;
-  margin: 0;
-}
-body #banner .container .banner-image img {
-  width: 100%;
-  position: relative;
-  top: 20%;
-  margin: 0;
+#features .container .fiches .fiches-item svg {
+  width: 25%;
 }
 
-.btn {
-  color: black;
-  text-transform: uppercase;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px black;
+footer {
+  background-color: rgb(32, 32, 32);
+  padding-top: 18vh;
+  width: 100%;
+}
+footer .end-nav {
+  display: flex;
+  justify-content: space-around;
+}
+footer .end-nav .footer-list .list {
+  display: flex;
+  list-style: none;
+  gap: 4vh;
+}
+footer .end-nav .footer-list .list .menu-item {
+  color: grey;
+}
+footer .end-nav .footer-list .list .menu-item-active {
+  color: white;
+}
+footer .end-nav .footer-list .list a {
   text-decoration: none;
-  padding: 1vh;
+}
+footer .container {
+  margin-bottom: 0;
+  border-top: 1px solid grey;
+}
+footer .container .end-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container .end-list .list {
+  list-style: none;
+  gap: 4vh;
+  padding: 0;
+}
+footer .container .end-list li:first-child {
+  color: white;
+}
+footer .container .end-list li:not(:first-child) {
+  color: grey;
+}
+footer .container .end-list .rs {
+  display: flex;
+  list-style: none;
+  gap: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+  .header .header-list {
+    display: none;
+  }
+  .header .menu {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
