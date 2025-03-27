@@ -1,12 +1,17 @@
 @media screen and (max-width: 768px) {
-    .header {
-
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
         .header-list {
          display: none;
         }
-
         .menu {
             display: flex;
         }
-    }   
+    }
+    
+    main  {
+        
+    }
 }

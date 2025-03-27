@@ -18,22 +18,10 @@ header {
 
             .menu-item-active {
                 color: vstyle.$primarycolor;
-            }
-
-            a {
-                text-decoration: vstyle.$styleless;
-            }
-            
+            } 
         }
     }
     .menu {
         display: none;
-    }
-}
-
-.logo {
-    width: 20vh;
-    img {
-        width: 100%;
     }
 }

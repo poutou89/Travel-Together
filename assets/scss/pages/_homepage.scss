@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as vstyle;
+
+.container-card {
+    display: flex;
+    gap: 1vh;
+    h3 {
+        color: vstyle.$thristycolor;
+        text-transform: uppercase;
+    }
+}
+
+#services {
+    p {
+        color: vstyle.$thristycolor;
+    }
+    p::after {
+        content: ">";
+        color: rgb(226, 108, 108);
+    }
+}
+
+.cadrerose {
+    h1, p {
+        color: vstyle.$thristycolor;
+        width: 80%;
+        padding: 3vh;
+    }
+    a {
+        margin-left: 3vh;
+    }
+}

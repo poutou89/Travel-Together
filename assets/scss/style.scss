@@ -1,8 +1,9 @@
 @use 'layout/header.scss';
-@use 'layout/body.scss';
+@use 'layout/_base.scss';
 @use 'components/banner.scss';
 @use 'components/_button.scss';
 @use 'components/_card.scss';
 @use 'components/_fiches.scss';
 @use 'layout/_footer.scss';
-@use 'layout/_mobile.scss';
+@use 'layout/_responsive.scss';
+@use 'pages/homepage'

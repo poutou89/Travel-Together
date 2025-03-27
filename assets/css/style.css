@@ -18,18 +18,8 @@ header .header-list .list .menu-item {
 header .header-list .list .menu-item-active {
   color: black;
 }
-header .header-list .list a {
-  text-decoration: none;
-}
 header .menu {
   display: none;
-}
-
-.logo {
-  width: 20vh;
-}
-.logo img {
-  width: 100%;
 }
 
 @font-face {
@@ -41,18 +31,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  font-family: "LatoRegular";
+  font-family: "LatoRegular", sans-serif;
 }
 
 h2 {
-  margin-top: 10vh;
-  font-size: 36px;
+  font-size: 5vh;
 }
 
 .container {
-  margin: 4vh auto;
+  margin: 10vh auto;
   width: 65%;
   position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 20vh;
+}
+.logo img {
+  width: 100%;
 }
 
 .container .cadrerose {
@@ -64,19 +64,11 @@ h2 {
   align-items: center;
   overflow: hidden;
   width: 100%;
-}
-.container .cadrerose * {
-  margin: 4vh;
-}
-.container .cadrerose h1,
-.container .cadrerose p {
-  color: white;
-  width: 80%;
+  padding: 4vh;
 }
 .container .banner-image {
-  margin: 0 10% 0 0;
+  margin: 0 10% -20% 0;
   position: relative;
-  transform: translateY(8vh);
 }
 .container .banner-image img {
   width: 100%;
@@ -84,10 +76,7 @@ h2 {
 }
 
 #end-banner .container .cadrerose {
-  align-items: center;
-  transform: translateY(20vh);
-  margin-top: -20vh;
-  justify-content: space-evenly;
+  margin-bottom: -25vh;
   position: relative;
 }
 #end-banner .container .cadrerose .container-text {
@@ -95,8 +84,7 @@ h2 {
 }
 #end-banner .container .cadrerose .container-button {
   width: 50%;
-  position: relative;
-  top: 50%;
+  text-align: center;
 }
 
 .btn {
@@ -109,63 +97,42 @@ h2 {
   padding: 1vh;
 }
 
-.container-card {
-  display: flex;
-  gap: 1vh;
-  width: 100%;
-}
-.container-card h3 {
-  color: white;
-  text-transform: uppercase;
-}
-.container-card .services-card-horizontal {
-  display: flex;
-  width: 50%;
-}
-.container-card .services-card-horizontal .card {
-  display: flex;
-  width: 70vh;
-  height: 51vh;
-}
-.container-card .services-card-horizontal .card-primary {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/homme-assis-batiment.jpg);
-  background-size: cover;
-  background-position: 0;
-}
-.container-card .services-card-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-  width: 50%;
-}
-.container-card .services-card-vertical .card {
-  display: flex;
-  height: 25vh;
-}
-.container-card .services-card-vertical .card-secondary {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/passport.jpg);
-  background-size: cover;
-  background-position: 0;
-}
-.container-card .services-card-vertical .card-thirsty {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/montgolfiere.jpg);
-  background-size: cover;
-  background-position: 0;
-}
-
 .card {
+  display: flex;
   box-shadow: 0 2px 2px grey;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   flex-direction: column;
+  background-size: cover;
+  background-position: 0;
+  width: 100%;
+  flex: 1;
 }
-.card p {
-  color: white;
+
+.services-card-horizontal {
+  display: flex;
+  width: 50%;
+  height: 50vh;
 }
-.card p::after {
-  content: ">";
-  color: rgb(226, 108, 108);
+
+.services-card-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 50%;
+}
+
+.card-primary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/homme-assis-batiment.jpg);
+}
+
+.card-secondary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/passport.jpg);
+}
+
+.card-thirsty {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/montgolfiere.jpg);
 }
 
 #features .container h2 {
@@ -204,9 +171,6 @@ footer .end-nav .footer-list .list .menu-item {
 footer .end-nav .footer-list .list .menu-item-active {
   color: white;
 }
-footer .end-nav .footer-list .list a {
-  text-decoration: none;
-}
 footer .container {
   margin-bottom: 0;
   border-top: 1px solid grey;
@@ -234,12 +198,42 @@ footer .container .end-list .rs {
 }
 
 @media screen and (max-width: 768px) {
-  .header .header-list {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+  header .header-list {
     display: none;
   }
-  .header .menu {
+  header .menu {
     display: flex;
   }
+}
+.container-card {
+  display: flex;
+  gap: 1vh;
+}
+.container-card h3 {
+  color: white;
+  text-transform: uppercase;
+}
+
+#services p {
+  color: white;
+}
+#services p::after {
+  content: ">";
+  color: rgb(226, 108, 108);
+}
+
+.cadrerose h1, .cadrerose p {
+  color: white;
+  width: 80%;
+  padding: 3vh;
+}
+.cadrerose a {
+  margin-left: 3vh;
 }
 
 /*# sourceMappingURL=style.css.map */

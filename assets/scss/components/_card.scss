@@ -1,61 +1,38 @@
 @use "../abstracts/variables" as vstyle;
 
-.container-card {
-    display: flex;
-    gap: 1vh;
-    width: 100%;
-    h3 {
-        color: vstyle.$thristycolor;
-        text-transform: uppercase;
-    }
-    .services-card-horizontal {
-        display: flex;
-        width: 50%;
-        .card {
-            display: flex;
-            width: 70vh;
-            height: 51vh;
-        }
-        .card-primary {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/homme-assis-batiment.jpg);
-            background-size: cover;
-            background-position: 0;
-        }
-    }
-    .services-card-vertical {
-        display: flex;
-        flex-direction: column;
-        gap: 1vh;
-        width: 50%;
-        .card {
-            display: flex;
-            height: 25vh;
-        }
-            .card-secondary {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/passport.jpg);
-                background-size: cover;
-                background-position: 0;
-            }
-            .card-thirsty {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/montgolfiere.jpg);
-                background-size: cover;
-                background-position: 0;
-            }
-    }
-    
-}
-
 .card {
+    display: flex;
     box-shadow: 0 2px 2px grey;
     align-items: center;
     justify-content: center;
     border-radius: vstyle.$bordrad;
     flex-direction: column;
-    p {
-        color: vstyle.$thristycolor;
-    }
-    p::after {
-        content: ">";
-        color: rgb(226, 108, 108);
-    }
+    background-size: cover;
+    background-position: 0;
+    width: 100%;
+    flex: 1;
 }
+    
+.services-card-horizontal {
+    display: flex;
+    width: 50%;
+    height: 50vh;
+}
+
+.services-card-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;    
+    width: 50%;         
+}
+
+.card-primary {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/homme-assis-batiment.jpg);
+}
+.card-secondary {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/passport.jpg);
+}
+.card-thirsty {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/montgolfiere.jpg);
+}
+
