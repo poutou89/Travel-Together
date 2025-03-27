@@ -107,31 +107,18 @@ a {
   background-size: cover;
   background-position: 0;
   width: 100%;
-  flex: 1;
-}
-
-.services-card-horizontal {
-  display: flex;
-  width: 50%;
   height: 50vh;
 }
-
-.services-card-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-  width: 50%;
+.card.card-demi {
+  height: 50%;
 }
-
-.card-primary {
+.card.card-primary {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/homme-assis-batiment.jpg);
 }
-
-.card-secondary {
+.card.card-secondary {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/passport.jpg);
 }
-
-.card-thirsty {
+.card.card-thirsty {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/montgolfiere.jpg);
 }
 
@@ -198,6 +185,10 @@ footer .container .end-list .rs {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin: 1vh auto;
+  }
   header {
     flex-direction: column;
     align-items: center;
@@ -208,6 +199,87 @@ footer .container .end-list .rs {
   }
   header .menu {
     display: flex;
+  }
+  main #banner .banner-image {
+    display: none;
+  }
+  main #banner .cadrerose {
+    padding: 2vh;
+  }
+  main #banner .cadrerose h1,
+  main #banner .cadrerose p {
+    width: 100%;
+    padding: 1vh;
+  }
+  main #banner .cadrerose a {
+    margin: 0 0 3vh 1vh;
+  }
+  main #services h2 {
+    text-align: center;
+  }
+  main #services .container-card {
+    flex-direction: column;
+  }
+  main #services .container-card .services-card-horizontal,
+  main #services .container-card .services-card-vertical {
+    width: 100%;
+  }
+  main #services .container-card .services-card-horizontal .card,
+  main #services .container-card .services-card-vertical .card {
+    height: 50vh;
+  }
+  main #services .container-card .services-card-horizontal .card.card-demi,
+  main #services .container-card .services-card-vertical .card.card-demi {
+    height: 50vh;
+  }
+  main #features .container h2 {
+    text-align: center;
+  }
+  main #features .container .fiches {
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+  }
+  main #features .container .fiches .fiches-item {
+    width: 90%;
+  }
+  main #features .container .fiches .fiches-item svg {
+    width: 20%;
+  }
+  main #end-banner .container .cadrerose {
+    flex-direction: column;
+    margin-bottom: -14vh;
+  }
+  main #end-banner .container .cadrerose .container-text {
+    width: 100%;
+    text-align: center;
+  }
+  main #end-banner .container .cadrerose h1, main #end-banner .container .cadrerose p {
+    width: inherit;
+  }
+  main #end-banner .container .cadrerose a {
+    margin-left: inherit;
+  }
+  main #end-banner .container .cadrerose .container-button {
+    width: 100%;
+  }
+  footer .end-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .end-nav .footer-list .list {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    text-align: center;
+  }
+  footer .container .end-list {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .container .end-list .rs {
+    padding: 0;
+    text-align: center;
   }
 }
 .container-card {
@@ -234,6 +306,14 @@ footer .container .end-list .rs {
 }
 .cadrerose a {
   margin-left: 3vh;
+}
+
+.services-card-horizontal {
+  width: 50%;
+}
+
+.services-card-vertical {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

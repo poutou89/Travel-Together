@@ -1,17 +1,134 @@
 @media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 1vh auto;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
         gap: 2vh;
+
         .header-list {
-         display: none;
+            display: none;
         }
+
         .menu {
             display: flex;
         }
     }
-    
-    main  {
-        
+
+    main {
+        #banner {
+            .banner-image {
+                display: none;
+            }
+
+            .cadrerose {
+
+                h1,
+                p {
+                    width: 100%;
+                    padding: 1vh;
+                }
+
+                a {
+                    margin: 0 0 3vh 1vh;
+                }
+
+                padding: 2vh;
+            }
+        }
+
+        #services {
+            h2 {
+                text-align: center;
+            }
+
+            .container-card {
+                flex-direction: column;
+
+                .services-card-horizontal,
+                .services-card-vertical {
+                    width: 100%;
+
+                    .card {
+                        height: 50vh;
+
+                        &.card-demi {
+                            height: 50vh;
+                        }
+                    }
+                }
+            }
+        }
+
+        #features {
+            .container {
+                h2 {
+                    text-align: center;
+                }
+                .fiches {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 4vh;
+                    .fiches-item {
+                        width: 90%;
+                        svg {
+                            width: 20%;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        #end-banner {
+            .container{
+                .cadrerose {
+                    flex-direction: column;
+                    margin-bottom: -14vh;
+                    .container-text {
+                        width: 100%;
+                        text-align: center;
+                    }
+                    h1,p {
+                        width: inherit;
+                    }
+                    a {
+                        margin-left: inherit;
+                    }
+                    .container-button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .end-nav {
+            flex-direction: column;
+            align-items: center;
+            .footer-list {
+                .list {
+                    flex-direction: column;
+                    gap: 0;
+                    padding: 0;
+                    text-align: center;
+                    
+                }
+            }
+        }
+        .container {
+            .end-list {
+                flex-direction: column;
+                text-align: center;
+                .rs {
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
     }
 }

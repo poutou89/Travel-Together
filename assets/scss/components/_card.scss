@@ -10,29 +10,20 @@
     background-size: cover;
     background-position: 0;
     width: 100%;
-    flex: 1;
-}
-    
-.services-card-horizontal {
-    display: flex;
-    width: 50%;
     height: 50vh;
-}
+        &.card-demi {
+            height: 50%;
+        }
 
-.services-card-vertical {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;    
-    width: 50%;         
-}
 
-.card-primary {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/homme-assis-batiment.jpg);
-}
-.card-secondary {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/passport.jpg);
-}
-.card-thirsty {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/montgolfiere.jpg);
-}
+        &.card-primary {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/homme-assis-batiment.jpg);
+    }
+        &.card-secondary {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/passport.jpg);
+    }
+        &.card-thirsty {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/montgolfiere.jpg);
+    }
 
+}
