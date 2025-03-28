@@ -1,5 +1,7 @@
+@use "../abstracts/variables" as vstyle;
+
 @font-face {
-    font-family: "LatoRegular";
+    font-family: vstyle.$primary-font;
     src: url(../fonts/Lato/Lato-Regular.ttf);
 }
 

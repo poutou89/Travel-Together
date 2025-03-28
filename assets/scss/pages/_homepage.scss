@@ -13,29 +13,33 @@
     align-items: center;
 
     h3 {
-        color: vstyle.$thristycolor;
+        color: vstyle.$thristy-color;
         text-transform: uppercase;
     }
 
     &.card-semi {
         height: 50%;
     }
+
     &.card-primary {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/homme-assis-batiment.jpg);    
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/homme-assis-batiment.jpg);
     }
+
     &.card-secondary {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/passport.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/passport.jpg);
     }
+
     &.card-thirsty {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/montgolfiere.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/montgolfiere.jpg);
     }
 
 }
 
 #services {
     p {
-        color: vstyle.$thristycolor;
+        color: vstyle.$thristy-color;
     }
+
     p::after {
         content: ">";
         color: rgb(226, 108, 108);
@@ -43,20 +47,77 @@
 }
 
 .cadrerose {
-    h1, p {
-        color: vstyle.$thristycolor;
+        display: flex;
+        background-color: vstyle.$bg-color;
+        border-radius: vstyle.$bord-rad;
+        box-shadow: 0 2px 2px vstyle.$secondary-color;
+        position: relative;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        padding: 4vh;   
+    p {
+        color: vstyle.$thristy-color;
         width: 80%;
         padding: 3vh;
     }
+
     a {
         margin-left: 3vh;
     }
 }
 
-.services-card-horizontal {
-    width: 50%;
+#features {
+    .container {
+        h2 {
+            text-align: end;
+        }
+
+        .fiches {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            .fiches-item {
+                width: 23%;
+
+                svg {
+                    width: 25%;
+                }
+            }
+        }
+    }
 }
 
-.services-card-vertical {
-    width: 50%;
+#banner {
+    .container {
+        .banner-image {
+            margin: 0 10% -20% 0;
+            position: relative;
+
+            img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+#end-banner {
+    .container {
+        .cadrerose {
+            margin-bottom: -25vh;
+            position: relative;
+
+            .container-text {
+                width: 50%;
+            }
+
+            .container-button {
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
 }

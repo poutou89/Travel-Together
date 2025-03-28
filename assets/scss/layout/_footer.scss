@@ -4,7 +4,12 @@ footer {
     background-color: rgb(32, 32, 32);
     padding-top: 18vh;
     width: 100%;
-
+    .logo-footer {
+        width: 25vh;
+        img {
+            width: 100%;
+        }
+    }
     .end-nav {
         display: flex;
         justify-content: space-around;
@@ -12,15 +17,15 @@ footer {
         .footer-list {
             .list {
                 display: flex;
-                list-style: vstyle.$styleless;
+                list-style: vstyle.$style-less;
                 gap: 4vh;
 
                 .menu-item {
-                    color: vstyle.$secondarycolor;
+                    color: vstyle.$secondary-color;
                 }
 
                 .menu-item-active {
-                    color: vstyle.$thristycolor;
+                    color: vstyle.$thristy-color;
                 }
             }
         }
@@ -28,29 +33,29 @@ footer {
 
     .container {
         margin-bottom: 0;
-        border-top: 1px solid vstyle.$secondarycolor;
+        border-top: 1px solid vstyle.$secondary-color;
         .end-list {
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             .list {
-                list-style: vstyle.$styleless;
+                list-style: vstyle.$style-less;
                 gap: 4vh;
                 padding: 0;
             }
 
             li:first-child {
-                color: vstyle.$thristycolor;
+                color: vstyle.$thristy-color;
             }
 
             li:not(:first-child) {
-                color: vstyle.$secondarycolor;
+                color: vstyle.$secondary-color;
             }
 
             .rs {
                 display: flex;
-                list-style: vstyle.$styleless;
+                list-style: vstyle.$style-less;
                 gap: 1vh;
             }
         }

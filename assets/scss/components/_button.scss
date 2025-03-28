@@ -1,11 +1,11 @@
 @use "../abstracts/variables" as vstyle;
 
 .btn {
-    color: vstyle.$primarycolor;
+    color: vstyle.$primary-color;
     text-transform: uppercase;
-    background-color: vstyle.$thristycolor;
-    border-radius: vstyle.$bordrad;
-    box-shadow: 0 0 10px vstyle.$primarycolor;
-    text-decoration: vstyle.$styleless;
+    background-color: vstyle.$thristy-color;
+    border-radius: vstyle.$bord-rad;
+    box-shadow: 0 0 10px vstyle.$primary-color;
+    text-decoration: vstyle.$style-less;
     padding: 1vh;
 }

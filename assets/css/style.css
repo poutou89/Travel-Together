@@ -7,6 +7,12 @@ header {
   justify-content: space-around;
   width: 100%;
 }
+header .logo {
+  width: 20vh;
+}
+header .logo img {
+  width: 100%;
+}
 header .header-list .list {
   display: flex;
   list-style: none;
@@ -34,57 +40,22 @@ body {
   font-family: "LatoRegular", sans-serif;
 }
 
-h2 {
-  font-size: 5vh;
+h1 {
+  font-size: 6vh;
+  color: white;
+  padding: 3vh;
 }
 
-.container {
-  margin: 10vh auto;
-  width: 65%;
-  position: relative;
+h2 {
+  font-size: 5vh;
 }
 
 a {
   text-decoration: none;
 }
 
-.logo {
-  width: 20vh;
-}
-.logo img {
-  width: 100%;
-}
-
-.container .cadrerose {
-  display: flex;
-  background-color: rgb(226, 108, 108);
-  border-radius: 10px;
-  box-shadow: 0 2px 2px grey;
-  position: relative;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  padding: 4vh;
-}
-.container .banner-image {
-  margin: 0 10% -20% 0;
-  position: relative;
-}
-.container .banner-image img {
-  width: 100%;
-  margin: 0;
-}
-
-#end-banner .container .cadrerose {
-  margin-bottom: -25vh;
-  position: relative;
-}
-#end-banner .container .cadrerose .container-text {
-  width: 50%;
-}
-#end-banner .container .cadrerose .container-button {
-  width: 50%;
-  text-align: center;
+p {
+  font-size: 2vh;
 }
 
 .btn {
@@ -110,25 +81,15 @@ a {
   gap: 1rem;
 }
 
-#features .container h2 {
-  text-align: end;
-}
-#features .container .fiches {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-#features .container .fiches .fiches-item {
-  width: 23%;
-}
-#features .container .fiches .fiches-item svg {
-  width: 25%;
-}
-
 footer {
   background-color: rgb(32, 32, 32);
   padding-top: 18vh;
+  width: 100%;
+}
+footer .logo-footer {
+  width: 25vh;
+}
+footer .logo-footer img {
   width: 100%;
 }
 footer .end-nav {
@@ -174,8 +135,7 @@ footer .container .end-list .rs {
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 95%;
-    margin: 1vh auto;
+    max-width: 768px;
   }
   header {
     flex-direction: column;
@@ -306,7 +266,18 @@ footer .container .end-list .rs {
   color: rgb(226, 108, 108);
 }
 
-.cadrerose h1, .cadrerose p {
+.cadrerose {
+  display: flex;
+  background-color: rgb(226, 108, 108);
+  border-radius: 10px;
+  box-shadow: 0 2px 2px grey;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 4vh;
+}
+.cadrerose p {
   color: white;
   width: 80%;
   padding: 3vh;
@@ -315,12 +286,48 @@ footer .container .end-list .rs {
   margin-left: 3vh;
 }
 
-.services-card-horizontal {
-  width: 50%;
+#features .container h2 {
+  text-align: end;
+}
+#features .container .fiches {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+#features .container .fiches .fiches-item {
+  width: 23%;
+}
+#features .container .fiches .fiches-item svg {
+  width: 25%;
 }
 
-.services-card-vertical {
+#banner .container .banner-image {
+  margin: 0 10% -20% 0;
+  position: relative;
+}
+#banner .container .banner-image img {
+  width: 100%;
+  margin: 0;
+}
+
+#end-banner .container .cadrerose {
+  margin-bottom: -25vh;
+  position: relative;
+}
+#end-banner .container .cadrerose .container-text {
   width: 50%;
+}
+#end-banner .container .cadrerose .container-button {
+  width: 50%;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 10vh auto;
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,28 +6,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    font-family: vstyle.$primaryfont, vstyle.$secondaryfont;
+    font-family: vstyle.$primary-font, vstyle.$secondary-font;
+}
+
+h1 {
+    font-size: 6vh;
+    color: vstyle.$thristy-color;
+    padding: 3vh;
 }
 
 h2 {
     font-size: 5vh;
 }
 
-.container {
-    margin: 10vh auto;
-    width: 65%;
-    position: relative;
-}
-
 a {
-    text-decoration: vstyle.$styleless;
+    text-decoration: vstyle.$style-less;
 }
 
-.logo {
-    width: 20vh;
-    img {
-        width: 100%;
-    }
+p {
+    font-size: 2vh;
 }
+
 
 

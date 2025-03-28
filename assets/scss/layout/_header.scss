@@ -6,18 +6,24 @@ header {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    .logo {
+        width: 20vh;
+        img {
+            width: 100%;
+        }
+    }
     .header-list {
         .list {
             display: flex;
-            list-style: vstyle.$styleless;
+            list-style: vstyle.$style-less;
             gap: 4vh;
             
             .menu-item {
-                color: vstyle.$secondarycolor;
+                color: vstyle.$secondary-color;
             }
 
             .menu-item-active {
-                color: vstyle.$primarycolor;
+                color: vstyle.$primary-color;
             } 
         }
     }
