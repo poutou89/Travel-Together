@@ -1,23 +1,19 @@
 @use "../abstracts/variables" as vstyle;
 
 .card {
-    display: flex;
-    box-shadow: 0 2px 2px grey;
-    align-items: center;
-    justify-content: center;
-    border-radius: vstyle.$bordrad;
-    flex-direction: column;
-    background-size: cover;
-    background-position: 0;
-    width: 100%;
-    height: 50vh;
-        &.card-demi {
-            height: 50%;
-        }
-
+    
+    &.card-demi {
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        width: 50%;
+    }
 
         &.card-primary {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/homme-assis-batiment.jpg);
+        display: flex;
+        height: 50vh;
+        width: 50%;
     }
         &.card-secondary {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/passport.jpg);
