@@ -1,25 +1,16 @@
 @use "../abstracts/variables" as vstyle;
 
-.card {
-    
-    &.card-demi {
+.container-card {
+    display: flex;
+    gap: 1rem;
+
+    .card-left, .card-right {
+        width: 50%;
+    }
+
+    .card-right {
         display: flex;
         flex-direction: column;
-        height: 25vh;
-        width: 50%;
+        gap: 1rem;
     }
-
-        &.card-primary {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/homme-assis-batiment.jpg);
-        display: flex;
-        height: 50vh;
-        width: 50%;
-    }
-        &.card-secondary {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/passport.jpg);
-    }
-        &.card-thirsty {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/montgolfiere.jpg);
-    }
-
 }

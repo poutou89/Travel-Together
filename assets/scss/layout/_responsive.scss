@@ -48,14 +48,14 @@
             .container-card {
                 flex-direction: column;
 
-                .services-card-horizontal,
-                .services-card-vertical {
+                .card-left,
+                .card-right {
                     width: 100%;
 
                     .card {
                         height: 50vh;
 
-                        &.card-demi {
+                        &.card-semi {
                             height: 50vh;
                         }
                     }

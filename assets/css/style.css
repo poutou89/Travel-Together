@@ -97,23 +97,17 @@ a {
   padding: 1vh;
 }
 
-.card.card-demi {
+.container-card {
+  display: flex;
+  gap: 1rem;
+}
+.container-card .card-left, .container-card .card-right {
+  width: 50%;
+}
+.container-card .card-right {
   display: flex;
   flex-direction: column;
-  height: 25vh;
-  width: 50%;
-}
-.card.card-primary {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/homme-assis-batiment.jpg);
-  display: flex;
-  height: 50vh;
-  width: 50%;
-}
-.card.card-secondary {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/passport.jpg);
-}
-.card.card-thirsty {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/montgolfiere.jpg);
+  gap: 1rem;
 }
 
 #features .container h2 {
@@ -214,16 +208,16 @@ footer .container .end-list .rs {
   main #services .container-card {
     flex-direction: column;
   }
-  main #services .container-card .services-card-horizontal,
-  main #services .container-card .services-card-vertical {
+  main #services .container-card .card-left,
+  main #services .container-card .card-right {
     width: 100%;
   }
-  main #services .container-card .services-card-horizontal .card,
-  main #services .container-card .services-card-vertical .card {
+  main #services .container-card .card-left .card,
+  main #services .container-card .card-right .card {
     height: 50vh;
   }
-  main #services .container-card .services-card-horizontal .card.card-demi,
-  main #services .container-card .services-card-vertical .card.card-demi {
+  main #services .container-card .card-left .card.card-semi,
+  main #services .container-card .card-right .card.card-semi {
     height: 50vh;
   }
   main #features .container h2 {
@@ -276,15 +270,32 @@ footer .container .end-list .rs {
     text-align: center;
   }
 }
-.container-card {
+.card {
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1vh;
 }
-.container-card h3 {
+.card h3 {
   color: white;
   text-transform: uppercase;
+}
+.card.card-semi {
+  height: 50%;
+}
+.card.card-primary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/homme-assis-batiment.jpg);
+}
+.card.card-secondary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/passport.jpg);
+}
+.card.card-thirsty {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/montgolfiere.jpg);
 }
 
 #services p {
